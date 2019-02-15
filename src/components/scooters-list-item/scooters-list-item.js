@@ -35,7 +35,7 @@ const ScooterListItem = ({ scooter }) => {
             <span className="scooter-present-numb">{presentnumb}</span>
             {present}
           </p>
-          <p className="scooter-author">{review}</p>
+          <p className="scooter-review">{review}</p>
         </div>
 
         <div className="scooter-cover">
@@ -44,7 +44,7 @@ const ScooterListItem = ({ scooter }) => {
       </div>
       <div className="scooter-description">{description} </div>
       <div className="scooter-question">
-        {question} <span className="scooter-buttun">{buttun}</span>
+        {question} <span className="scooter-buttun">{buttun}</span>.
       </div>
     </Fragment>
   );

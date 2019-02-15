@@ -1,0 +1,89 @@
+$blue: #1698d9;
+$white: #f2f2f2;
+$black: #000;
+$dark-gray: #666;
+$gray: #b3b3b3;
+
+p {
+  margin: 0;
+  padding: 0;
+}
+.scooter-list-element {
+  position: relative;
+  box-sizing: border-box;
+  border: 4px solid $blue;
+  border-top: 0;
+  border-radius: 0 0 12px 12px;
+  background-color: $white;
+  min-height: 435px;
+  &:before {
+    position: absolute;
+    z-index: 0;
+    top: -2px;
+    left: 1px;
+    width: 312px;
+    height: 6px;
+    content: "";
+    border-radius: 6px;
+    background-color: $white;
+  }
+}
+.scooter-title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  position: relative;
+  z-index: 1;
+  top: -24px;
+  width: 240px;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  left: 44px;
+  color: $dark-gray;
+}
+.scooter-contents {
+  min-height: 160px;
+  margin-top: -17px;
+  padding-left: 44px;
+  border-radius: 0 0 8px 8px;
+}
+.scooter-contents {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: $gray;
+  margin: 0;
+}
+.scooter-name {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: 15px;
+  margin-left: -2px;
+  color: $black;
+}
+.scooter-view {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  display: block;
+  margin-left: 2px;
+}
+
+.scooter-portion-numb,
+.scooter-present-numb {
+  font-weight: 700;
+}
+
+.scooter-description {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  display: none;
+  margin: 0;
+  padding-top: 15px;
+  text-align: center;
+  color: #fff;
+}

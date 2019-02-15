@@ -16,6 +16,8 @@ p {
   border-radius: 0 0 12px 12px;
   background-color: $white;
   min-height: 435px;
+  cursor: pointer;
+
   &:before {
     position: absolute;
     z-index: 0;
@@ -81,9 +83,48 @@ p {
   font-size: 13px;
   font-weight: 400;
   line-height: 16px;
-  display: none;
+  display: none; //убрать потом
   margin: 0;
   padding-top: 15px;
   text-align: center;
   color: #fff;
+}
+.scooter-cover {
+  font-size: 0;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  overflow: hidden;
+  height: 269px;
+  border-radius: 0 0 8px 8px;
+  justify-content: center;
+  align-items: flex-end;
+}
+.scooter-cover-img {
+  width: auto;
+  height: auto;
+  max-height: 269px;
+}
+.scooter-question {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 13px;
+  min-height: 14px;
+  margin: 0;
+  margin-top: 15px;
+  text-align: center;
+  color: #fff;
+}
+
+.scooter-buttun {
+  line-height: 1;
+  padding: 0;
+  cursor: pointer;
+  color: $blue;
+  border-bottom: 1px dashed $blue;
+  &:hover {
+    color: #2ea8e6;
+    border-bottom: 1px dashed #2ea8e6;
+  }
 }

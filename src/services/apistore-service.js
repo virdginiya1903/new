@@ -13,7 +13,9 @@ export default class ApistoreService {
       image:
         "https://user-images.githubusercontent.com/35657933/52784274-98820a00-3065-11e9-8eb2-ecc0e906dc7c.png",
       weight: "0,5 кг",
-      description: "Печень утки разварная с артишоками."
+      description: "Печень утки разварная с артишоками.",
+      question: "Чего сидишь? Порадуй котэ, ",
+      buttun: "купи"
     },
     {
       id: "2",
@@ -28,7 +30,9 @@ export default class ApistoreService {
       image:
         "https://user-images.githubusercontent.com/35657933/52784274-98820a00-3065-11e9-8eb2-ecc0e906dc7c.png",
       weight: "2 кг",
-      description: "Головы щучьи с чесноком да свежайшая сёмгушка."
+      description: "Головы щучьи с чесноком да свежайшая сёмгушка.",
+      question: "Чего сидишь? Порадуй котэ,",
+      buttun: "купи"
     },
     {
       id: "3",
@@ -44,7 +48,9 @@ export default class ApistoreService {
       image:
         "https://user-images.githubusercontent.com/35657933/52784274-98820a00-3065-11e9-8eb2-ecc0e906dc7c.png",
       weight: "5 кг",
-      description: "Филе из цыплят с трюфелями в бульоне."
+      description: "Филе из цыплят с трюфелями в бульоне.",
+      question: "Чего сидишь? Порадуй котэ, ",
+      buttun: "купи"
     }
   ];
 

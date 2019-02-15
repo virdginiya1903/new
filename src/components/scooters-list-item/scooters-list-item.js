@@ -12,10 +12,12 @@ const ScooterListItem = ({ scooter }) => {
     presentnumb,
     review,
     image,
-    description
+    description,
+    question,
+    buttun
   } = scooter;
   return (
-    <div>
+    <Fragment>
       <div className="scooter-list-element">
         <p href="#" className="scooter-title">
           {title}
@@ -37,11 +39,14 @@ const ScooterListItem = ({ scooter }) => {
         </div>
 
         <div className="scooter-cover">
-          <img src={image} alt="cover" />
+          <img src={image} alt="cover" className="scooter-cover-img" />
         </div>
       </div>
       <div className="scooter-description">{description} </div>
-    </div>
+      <div className="scooter-question">
+        {question} <span className="scooter-buttun">{buttun}</span>
+      </div>
+    </Fragment>
   );
 };
 

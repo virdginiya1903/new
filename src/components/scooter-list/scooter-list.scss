@@ -35,10 +35,10 @@ $font: "Exo2Thin", "Arial", sans-serif;
   text-align: center;
   color: #fff;
   @include tablets {
-    margin: 15px 0;
+    margin: 20px 0;
   }
   @include phones {
-    margin: 15px 0;
+    margin: 20px 0;
   }
 }
 .scooter-list {

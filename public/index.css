@@ -12,13 +12,7 @@ p {
   padding: 0;
 }
 .root {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(75, 9, 9, 0.5) 0%,
-      transparent 50%,
-      rgba(0, 0, 0, 0.5) 100%
-    ),
-    url(https://user-images.githubusercontent.com/35109743/52794922-d1c87300-3081-11e9-93f4-882be4db5f18.jpg);
+  background-image: url(https://user-images.githubusercontent.com/35109743/52794922-d1c87300-3081-11e9-93f4-882be4db5f18.jpg);
   background-position: center center;
   width: 100%;
   min-height: 100%;

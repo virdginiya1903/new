@@ -3,6 +3,8 @@ $phones: 480px;
 
 $blue: #1698d9;
 $gray: #f2f2f2;
+$pink: #d91667;
+$light-pink: #e52e7a;
 
 @font-face {
   font-family: "Exo2Thin";
@@ -39,6 +41,7 @@ $font: "Exo2Thin", "Arial", sans-serif;
   }
   @include phones {
     margin: 20px 0;
+    padding: 0 15px;
   }
 }
 .scooter-list {
@@ -109,5 +112,23 @@ $font: "Exo2Thin", "Arial", sans-serif;
   @include phones {
     margin-top: 45px;
     margin-bottom: 20px;
+  }
+}
+.scooter-list-item__check {
+  &:after {
+    border-top: 4px solid $pink;
+    border-right: 4px solid $pink;
+    &:hover {
+      border-top: 4px solid $light-pink;
+      border-right: 4px solid $light-pink;
+    }
+  }
+  &:before {
+    border-top: 4px solid $pink;
+    border-left: 4px solid $pink;
+    &:hover {
+      border-top: 4px solid $light-pink;
+      border-left: 4px solid $light-pink;
+    }
   }
 }

@@ -18,7 +18,7 @@ const ScooterListItem = ({ scooter }) => {
   } = scooter;
   return (
     <Fragment>
-      <div className="scooter-list-element">
+      <div className="scooter-list-element scooter-list-element__check">
         <p href="#" className="scooter-title">
           {title}
         </p>

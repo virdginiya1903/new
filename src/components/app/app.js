@@ -6,14 +6,14 @@ import "./app.scss";
 
 const App = () => {
   return (
-    <main className="base">
-      <div className="container">
+    <section className="base">
+      <div className="base-container">
         <Switch>
           <Route path="/" component={HomePage} exact />
           <Route path="/cart" component={CartPage} />
         </Switch>
       </div>
-    </main>
+    </section>
   );
 };
 

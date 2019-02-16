@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import ScooterListItem from "../scooters-list-item";
 import Spinner from "../spinner";
 import { connect } from "react-redux";
@@ -35,15 +35,18 @@ class ScooterList extends Component {
     }
 
     return (
-      <ul className="scooter-list">
-        {scooters.map(scooter => {
-          return (
-            <li key={scooter.id} className="scooter-list-item ">
-              <ScooterListItem scooter={scooter} />
-            </li>
-          );
-        })}
-      </ul>
+      <Fragment>
+        <h2 className="title">Ты сегодня покормил кота?</h2>
+        <ul className="scooter-list">
+          {scooters.map(scooter => {
+            return (
+              <li key={scooter.id} className="scooter-list-item ">
+                <ScooterListItem scooter={scooter} />
+              </li>
+            );
+          })}
+        </ul>
+      </Fragment>
     );
   }
 }

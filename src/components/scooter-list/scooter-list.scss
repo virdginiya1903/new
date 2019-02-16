@@ -3,6 +3,18 @@ $phones: 480px;
 
 $blue: #1698d9;
 $gray: #f2f2f2;
+
+@font-face {
+  font-family: "Exo2Thin";
+  font-weight: 300;
+  font-style: normal;
+
+  src: url("../../fonts/Exo2Thin.woff2") format("woff2"),
+    url("../../fonts/Exo2Thin.woff") format("woff");
+}
+
+$font: "Exo2Thin", "Arial", sans-serif;
+
 @mixin tablets {
   @media screen and (max-width: $tablets) {
     @content;
@@ -14,7 +26,21 @@ $gray: #f2f2f2;
     @content;
   }
 }
-
+.title {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #fff;
+  @include tablets {
+    margin: 15px 0;
+  }
+  @include phones {
+    margin: 15px 0;
+  }
+}
 .scooter-list {
   list-style: none;
   display: flex;

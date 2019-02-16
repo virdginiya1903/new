@@ -2,9 +2,11 @@ $tablets: 1150px;
 $phones: 480px;
 
 $blue: #1698d9;
-$gray: #f2f2f2;
+$light-blue: #2ea8e6;
+$white: #f2f2f2;
 $pink: #d91667;
 $light-pink: #e52e7a;
+$gray: #b3b3b3;
 
 @font-face {
   font-family: "Exo2Thin";
@@ -71,7 +73,7 @@ $font: "Exo2Thin", "Arial", sans-serif;
   margin-left: 0;
 
   &:last-child {
-    margin-bottom: 0;
+    margin-bottom: 15px;
   }
   &:after {
     position: absolute;
@@ -82,11 +84,10 @@ $font: "Exo2Thin", "Arial", sans-serif;
     width: 160px;
     height: 45px;
     content: "";
-
     border-top: 4px solid $blue;
     border-right: 4px solid $blue;
     border-top-right-radius: 12px;
-    background-color: $gray;
+    background-color: $white;
   }
   &:before {
     position: absolute;
@@ -101,7 +102,20 @@ $font: "Exo2Thin", "Arial", sans-serif;
     transform: skew(-45deg);
     border-top: 4px solid $blue;
     border-left: 4px solid $blue;
-    background-color: $gray;
+    background-color: $white;
+  }
+  &:hover {
+    &:after {
+      border-top: 4px solid $light-blue;
+      border-right: 4px solid $light-blue;
+    }
+    &:before {
+      border-top: 4px solid $light-blue;
+      border-left: 4px solid $light-blue;
+    }
+    .scooter-size {
+      background-color: $light-blue;
+    }
   }
   @include tablets {
     margin-right: 10px;
@@ -118,17 +132,84 @@ $font: "Exo2Thin", "Arial", sans-serif;
   &:after {
     border-top: 4px solid $pink;
     border-right: 4px solid $pink;
-    &:hover {
-      border-top: 4px solid $light-pink;
-      border-right: 4px solid $light-pink;
-    }
   }
   &:before {
     border-top: 4px solid $pink;
     border-left: 4px solid $pink;
-    &:hover {
+  }
+  .scooter-size {
+    background-color: $pink;
+  }
+  .scooter-list-element {
+    border: 4px solid $pink;
+    &:before {
+      top: -5px;
+    }
+  }
+  &:hover {
+    &:after {
+      border-top: 4px solid $light-pink;
+      border-right: 4px solid $light-pink;
+    }
+    &:before {
       border-top: 4px solid $light-pink;
       border-left: 4px solid $light-pink;
     }
+
+    .scooter-size {
+      background-color: $light-pink;
+    }
+    .scooter-list-element {
+      border: 4px solid $light-pink;
+    }
+  }
+}
+.scooter-list-item__disabled {
+  cursor: default;
+
+  &:after {
+    border-top: 4px solid $gray;
+    border-right: 4px solid $gray;
+  }
+  &:before {
+    border-top: 4px solid $gray;
+    border-left: 4px solid $gray;
+  }
+  .scooter-size {
+    background-color: $gray;
+  }
+  .scooter-list-element {
+    cursor: default;
+
+    border: 4px solid $gray;
+    &:before {
+      top: -5px;
+    }
+  }
+  &:hover {
+    cursor: default;
+
+    &:after {
+      border-top: 4px solid $gray;
+      border-right: 4px solid $gray;
+    }
+    &:before {
+      border-top: 4px solid $gray;
+      border-left: 4px solid $gray;
+    }
+
+    .scooter-size {
+      background-color: $gray;
+    }
+    .scooter-list-element {
+      cursor: default;
+      border: 4px solid $gray;
+    }
+  }
+  .scooter-cover,
+  .scooter-contents,
+  .scooter-title,
+  .scooter-name {
+    opacity: 0.5;
   }
 }

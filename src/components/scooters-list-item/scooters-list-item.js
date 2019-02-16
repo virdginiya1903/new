@@ -14,11 +14,14 @@ const ScooterListItem = ({ scooter }) => {
     image,
     description,
     question,
-    buttun
+    buttun,
+    weight,
+    measure,
+    disabledtext
   } = scooter;
   return (
     <Fragment>
-      <div className="scooter-list-element scooter-list-element__check">
+      <div className="scooter-list-element ">
         <p href="#" className="scooter-title">
           {title}
         </p>
@@ -37,15 +40,20 @@ const ScooterListItem = ({ scooter }) => {
           </p>
           <p className="scooter-review">{review}</p>
         </div>
-
+        <div className="scooter-size ">
+          <span className="scooter-size-weight">{weight}</span>
+          <span className="scooter-size-measure">{measure}</span>
+        </div>
         <div className="scooter-cover">
           <img src={image} alt="cover" className="scooter-cover-img" />
         </div>
       </div>
       <div className="scooter-description">{description} </div>
       <div className="scooter-question">
-        {question} <span className="scooter-buttun">{buttun}</span>.
+        {question}
+        <span className="scooter-buttun">{buttun}</span>.
       </div>
+      <div className="scooter-disabled">{disabledtext} </div>
     </Fragment>
   );
 };
